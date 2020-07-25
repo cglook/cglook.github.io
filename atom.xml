@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cglook.github.io/"/>
-  <updated>2020-07-18T12:26:13.230Z</updated>
+  <updated>2020-07-25T09:50:19.609Z</updated>
   <id>https://cglook.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Normalmap法线贴图</title>
+    <link href="https://cglook.github.io/posts/Normal02/"/>
+    <id>https://cglook.github.io/posts/Normal02/</id>
+    <published>2020-07-25T09:50:43.000Z</published>
+    <updated>2020-07-25T09:50:19.609Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;观念的建立&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是法线贴图**&lt;/strong&gt;(Normal Map)**&lt;/p&gt;
+&lt;p&gt;法线贴图常常用在低解析度模型，伪装出高解析度的模型细节表现。法线贴图的每个像素储存了法线，法线就是一种向量，纪录了高解析度模型的表面斜度。红色、绿色、蓝色通道分别控制了每个像素的方向。&lt;/p&gt;
+&lt;p&gt;当你把法线贴图到用到低解析度模型，法线贴图上面的像素会控制了低阶析度模型的向量，造成了模型表面更多细节的假象。然而，从侧面来看，模型本身并没有改变。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Normalmap" scheme="https://cglook.github.io/categories/Normalmap/"/>
+    
+    
+      <category term="Normalmap" scheme="https://cglook.github.io/tags/Normalmap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Normalmap原理及去除接缝</title>
+    <link href="https://cglook.github.io/posts/Normal01/"/>
+    <id>https://cglook.github.io/posts/Normal01/</id>
+    <published>2020-07-25T09:10:43.000Z</published>
+    <updated>2020-07-25T09:39:48.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Normalmap原理及去除接缝&quot;&gt;&lt;a href=&quot;#Normalmap原理及去除接缝&quot; class=&quot;headerlink&quot; title=&quot;Normalmap原理及去除接缝&quot;&gt;&lt;/a&gt;Normalmap原理及去除接缝&lt;/h2&gt;&lt;p&gt;在遇到Normal map上出现接缝时是十分棘手的。它不像Diffuse和Specular那样，可以直观的在ZB或者BodyPaint里用投射的方法去修平。这是因为Normal map本身原理所致。&lt;br&gt;　　在这里我想先再详细讲一下Normal Map的原理。如果你觉得自己对Normalmap已经非常熟悉可以跳过这一节。&lt;/p&gt;
+&lt;p&gt;● NormalMap 原理：&lt;br&gt;　　我建议新手在得到一张NormalMap时，把Red/Green/Blue三个通道分开来看，因为NormalMap的三个通道之间是互相独立的，在R/G/B三个通道中，不同的灰度，表达了低模表面上法线偏移的程度。大家知道，法线在物理中的定义是垂直于物体表面的一条假想的直线。而在MAYA中，法线的概念并不一样，它不一定要垂直于物体表面，并且具有方向行。我们可以在MAYA中直观的看到物体上每个顶点的法线的方向。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Normalmap" scheme="https://cglook.github.io/categories/Normalmap/"/>
+    
+    
+      <category term="Normalmap" scheme="https://cglook.github.io/tags/Normalmap/"/>
+    
+  </entry>
   
   <entry>
     <title>手和颈部</title>
@@ -381,56 +427,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>五官结构介绍</title>
-    <link href="https://cglook.github.io/posts/3c5449cf/"/>
-    <id>https://cglook.github.io/posts/3c5449cf/</id>
-    <published>2020-06-26T16:00:00.000Z</published>
-    <updated>2020-06-27T12:55:31.214Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;嘴唇的形态结构&quot;&gt;&lt;a href=&quot;#嘴唇的形态结构&quot; class=&quot;headerlink&quot; title=&quot;嘴唇的形态结构&quot;&gt;&lt;/a&gt;嘴唇的形态结构&lt;/h4&gt;&lt;p&gt;唇部位于面部的下1/3处，指的是上下唇及口裂周围的面部组织，是面部活动范围最大的两个瓣状软组织结构。唇的上界为鼻底线，下界为颏唇沟，两侧以“八”字形唇面沟为界与颊部相邻。分为上唇和下唇两部分，两唇之间的横行裂称为口裂(俗称口)，口裂两端叫做口角。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="cg教程" scheme="https://cglook.github.io/categories/cg%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="人体结构" scheme="https://cglook.github.io/categories/cg%E6%95%99%E7%A8%8B/%E4%BA%BA%E4%BD%93%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="cg教程" scheme="https://cglook.github.io/tags/cg%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typora 完全使用详解</title>
-    <link href="https://cglook.github.io/posts/9954ada2/"/>
-    <id>https://cglook.github.io/posts/9954ada2/</id>
-    <published>2020-06-19T14:10:43.000Z</published>
-    <updated>2020-07-11T10:40:47.433Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Typora 完全使用详解&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;Typora-是什么？&quot;&gt;&lt;a href=&quot;#Typora-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Typora 是什么？&quot;&gt;&lt;/a&gt;Typora 是什么？&lt;/h2&gt;&lt;p&gt;Typora 是一款&lt;strong&gt;支持实时预览的 Markdown 文本编辑器&lt;/strong&gt;。它有 OS X、Windows、Linux 三个平台的版本，并且由于仍在测试中，是&lt;strong&gt;完全免费&lt;/strong&gt;的。&lt;/p&gt;
-&lt;p&gt;在这篇文章中，我希望以「Typora 是什么」这个问题为线索，向大家全面介绍这款令人爱不释手的笔记应用。&lt;/p&gt;
-&lt;h2 id=&quot;一个-Markdown-文本编辑器&quot;&gt;&lt;a href=&quot;#一个-Markdown-文本编辑器&quot; class=&quot;headerlink&quot; title=&quot;一个 Markdown 文本编辑器&quot;&gt;&lt;/a&gt;一个 Markdown 文本编辑器&lt;/h2&gt;&lt;p&gt;Typora 首先是一个 Markdown 文本编辑器，它支持且仅支持 Markdown 语法的文本编辑。在 &lt;a href=&quot;https://typora.io/&quot;&gt;Typora 官网&lt;/a&gt; 上他们将 Typora 描述为 「A truly &lt;strong&gt;minimal&lt;/strong&gt; markdown editor. 」。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.sspai.com/2019/05/24/49c4cdef47bf81018b9871a628523064.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;官网首页&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="工具教程" scheme="https://cglook.github.io/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="工具教程" scheme="https://cglook.github.io/tags/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
